@@ -14,4 +14,10 @@ public class HomeController : Controller
         Escape.InicializarJuego();
         return View();
     }
+
+    public IActionResult Sala2()
+    {
+        Escape.estadoJuego++;
+        return View();
+    }
 }

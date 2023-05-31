@@ -29,13 +29,21 @@
 }
 
 .sala{
-  background-image: url("../img/sala-base.PNG");
   width: 100vw;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
+}
+
+#sala1{
+  background-image: url("../img/sala-base.PNG");
+}
+
+#sala2{
+  background-image: url("../img/sala2.PNG");
+
 }
 
 .flecha{
@@ -45,4 +53,25 @@
   cursor: pointer;
   width: 20rem;
   height: 20rem;
+}
+
+.boton-pista{
+position: absolute;
+top: 87rem;
+right: 2rem;
+font-size: 6.6rem;
+color: #D1BECF;
+}
+
+.pista-visible{
+  font-size: 3rem;
+}
+
+.pizarron{
+  width: 17rem;
+  height: 21rem;
+  border: 5px solid black;
+  position: absolute;
+  top: 38rem;
+  right: 0;
 }
