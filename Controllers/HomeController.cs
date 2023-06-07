@@ -20,4 +20,19 @@ public class HomeController : Controller
         Escape.estadoJuego++;
         return View();
     }
+
+    public IActionResult respuestaSala2(string respuesta1){
+
+        Console.WriteLine(respuesta1);
+
+        if (Escape.ResolverSala(2, respuesta1.ToUpper()))
+        {
+            return RedirectToAction("Sala2Des");
+        }
+        return View("Sala2");
+    }
+
+    public IActionResult sala2Des(){
+        return View();
+    }
 }
