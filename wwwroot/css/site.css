@@ -35,15 +35,34 @@
   background-size: cover;
   background-position: center;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #sala1{
   background-image: url("../img/sala-base.PNG");
+
 }
 
 #sala2{
   background-image: url("../img/sala2.PNG");
+}
 
+#sala2-block{
+  background-image: url("../img/sala2-bloquead.png");
+}
+
+#sala3{
+  
+}
+
+.sala3-prendida{
+  background-image: url("../img/sala3.png");
+}
+
+.sala3-oscura{
+  background-image: url("../img/sala3Oscura.png");
 }
 
 .flecha{
@@ -55,12 +74,21 @@
   height: 20rem;
 }
 
+.flechaAd{
+  right: 42.6%;
+  top: 40rem;
+  width: 30rem;
+  height: 30rem;
+}
+
 .boton-pista{
-position: absolute;
-top: 87rem;
-right: 2rem;
-font-size: 6.6rem;
-color: #D1BECF;
+  position: absolute;
+  top: 87rem;
+  right: 2rem;
+  font-size: 6.6rem;
+  color: #D1BECF;
+  cursor: pointer;
+  transition: all 1s ease-in;
 }
 
 .pista-visible{
@@ -103,12 +131,28 @@ color: #D1BECF;
   padding: 2rem;
 }
 
-.visible{
-  display: block;
-  opacity: 1;
+.pista{
+  background-color: #D1BECF;
+  padding: 5rem;
+  font-size: 3rem;
+  z-index: 10;
 }
 
 .invisible{
   display: none;
   opacity: 0;
+}
+
+.visible{
+  display: block;
+  opacity: 1;
+}
+
+#llave{
+  position: absolute;
+  width: 5rem;
+  height: 3rem;
+  bottom: 23%;
+  left: 20rem;
+  cursor: pointer;
 }

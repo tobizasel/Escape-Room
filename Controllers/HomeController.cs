@@ -35,4 +35,9 @@ public class HomeController : Controller
     public IActionResult sala2Des(){
         return View();
     }
+
+    public IActionResult Sala3(){
+        
+        return View();
+    }
 }
