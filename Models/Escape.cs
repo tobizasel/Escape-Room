@@ -13,11 +13,11 @@
 
         Console.WriteLine(numSala + " " + respuesta + "peterico" + respuestas[numSala-1] + " " + estadoJuego);
 
-        if ((numSala == estadoJuego) && respuestas[numSala - 1] == respuesta.ToUpper())
+        if (respuestas[numSala - 1] == respuesta.ToUpper())
         {
-            return true;
+            return false;
         }
-        return false;
+        return true;
     }
     
 }

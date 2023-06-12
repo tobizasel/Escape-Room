@@ -6,6 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
 }
 
 .inicio{
@@ -51,10 +52,8 @@
 
 #sala2-block{
   background-image: url("../img/sala2-bloquead.png");
-}
+    display: block;
 
-#sala3{
-  
 }
 
 .sala3-prendida{
@@ -63,6 +62,15 @@
 
 .sala3-oscura{
   background-image: url("../img/sala3Oscura.png");
+}
+
+#sala3-des{
+  background-image: url("../img/sala3Des.png");
+}
+
+#sala3-sinLlave{
+  background-image: url("../img/sala3SinLLave.png");
+
 }
 
 .flecha{
@@ -116,7 +124,8 @@
   background-color: #E1BB80;
   border-radius: 2rem;
   margin-top: 1rem;
-
+  align-self: none;
+  justify-self: normal;
 }
 
 .pad__form{
@@ -141,6 +150,15 @@
 .invisible{
   display: none;
   opacity: 0;
+}
+
+.puerta{
+  width: 26rem;
+  height: 47rem;
+  border-radius: 5px;
+  right: 44%;
+  position: absolute;
+  top: 10rem;
 }
 
 .visible{

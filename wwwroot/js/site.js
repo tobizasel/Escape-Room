@@ -20,24 +20,5 @@ for (let index = 0; index < botonPista.length; index++) {
 }
 
 
-// pista.forEach(p => {
-//     p.addEventListener("click", mostrarPista)
-// });
 
 
-const pizarron1 = document.getElementById("pizarron");
-const pad1 = document.getElementById("pad")
-
-console.log(pizarron1);
-
-
-pizarron1.addEventListener("click", () => {
-    pad1.className = "visiible";
-})
-
-const sala3 = document.getElementById("sala3");
-
-setInterval(() => {
-    console.log("cambio");
-    sala3.classList.toggle("sala3-oscura")
-}, 1000)

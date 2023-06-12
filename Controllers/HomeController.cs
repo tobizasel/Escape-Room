@@ -37,7 +37,13 @@ public class HomeController : Controller
     }
 
     public IActionResult Sala3(){
-        
+        return View();
+    }
+    public IActionResult Sala3Des(){
+        return View();
+    }
+
+    public IActionResult Sala3SinLlave(){
         return View();
     }
 }
