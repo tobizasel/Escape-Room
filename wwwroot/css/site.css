@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+  
   html {
     font-size: 62.5%;
   }
@@ -7,6 +9,7 @@
   padding: 0;
   box-sizing: border-box;
   user-select: none;
+  font-family: 'Roboto', sans-serif;
 }
 
 .inicio{
@@ -70,7 +73,10 @@
 
 #sala3-sinLlave{
   background-image: url("../img/sala3SinLLave.png");
+}
 
+#sala4{
+  background-image: url("../img/sala4.png");
 }
 
 .flecha{
@@ -126,6 +132,7 @@
   margin-top: 1rem;
   align-self: none;
   justify-self: normal;
+  position: relative;
 }
 
 .pad__form{
@@ -173,4 +180,20 @@
   bottom: 23%;
   left: 20rem;
   cursor: pointer;
+}
+
+#pad4{
+  width: 6rem;
+  height: 10rem;
+  cursor: pointer;
+  position: absolute;
+  left: 22.5rem;
+  top: 39%;
+}
+
+.fa-circle-xmark{
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  font-size: 3rem;
 }

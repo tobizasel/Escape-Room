@@ -11,19 +11,18 @@ public class HomeController : Controller
 
     public IActionResult Sala1()
     {
-        Escape.InicializarJuego();
+        ViewBag.pista = Escape.InicializarSala(1);
         return View();
     }
 
     public IActionResult Sala2()
     {
-        Escape.estadoJuego++;
+        ViewBag.pista = Escape.InicializarSala(2);
         return View();
     }
 
     public IActionResult respuestaSala2(string respuesta1){
 
-        Console.WriteLine(respuesta1);
 
         if (Escape.ResolverSala(2, respuesta1.ToUpper()))
         {
@@ -33,10 +32,12 @@ public class HomeController : Controller
     }
 
     public IActionResult sala2Des(){
+        ViewBag.pista = Escape.InicializarSala(2);
         return View();
     }
 
     public IActionResult Sala3(){
+        ViewBag.pista = Escape.InicializarSala(3);
         return View();
     }
     public IActionResult Sala3Des(){
@@ -44,6 +45,24 @@ public class HomeController : Controller
     }
 
     public IActionResult Sala3SinLlave(){
+        ViewBag.pista = Escape.InicializarSala(4);
         return View();
+    }
+
+    public IActionResult Sala4(){
+        ViewBag.pista = Escape.InicializarSala(5);
+        return View();
+    }
+
+    public IActionResult respuesta4(int respuesta){
+
+
+        if (Escape.ResolverSala(4, Convert.ToString(respuesta)))
+        {   
+            return View("Sala4");
+
+        }
+            return RedirectToAction("Sala4Des");
+
     }
 }

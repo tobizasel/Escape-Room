@@ -1,13 +1,15 @@
  class Escape{
 
     public static int estadoJuego {set; get;} = 0; 
-    public static string[] respuestas = {"no respuesta","ESCAPE",""};
+    public static string[] respuestas = {"no","ESCAPE","no", "223176", "respuesta5"};
 
-    public static void InicializarJuego(){
-        string[] pistas = {"",""};
+    public static string InicializarSala(int numPista){
+        string[] pistas = {"asdasd","asdasd", "asdasd"};
 
-        estadoJuego = 1;
+        return pistas[numPista -1];
     }
+
+
     
     public static bool ResolverSala(int numSala, string respuesta){
 
