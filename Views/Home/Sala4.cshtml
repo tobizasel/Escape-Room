@@ -4,13 +4,16 @@
             <i id="x" class="fa-sharp fa-solid fa-circle-xmark"></i>
             <form class="pad__form" action='@Url.Action("respuesta4")' >
                 <input type="number" class="pad__texto" name="respuesta">
-                <input type="submit" class="pad__boton" value="Enviar Respuesta">
+                <div class="pad__botones">
+                    <input type="submit" class="pad__boton" value="✔️">
+                    <input type="button" class="pad__boton" value="❌">
+                </div>
             </form>
         </div>
 
         <i class="fa-solid fa-circle-question boton-pista"></i>
         <div class="pista invisible">
-                asas
+                @ViewBag.Pista
         </div>                
 
 </section>

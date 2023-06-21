@@ -1,5 +1,10 @@
 <section class="sala sala3-prendida" id="sala3">
     <a href='@Url.Action("Sala3SinLlave")'><div id="llave"></div></a>
+
+        <i class="fa-solid fa-circle-question boton-pista"></i>
+        <div class="pista invisible">
+                @ViewBag.Pista
+        </div>
 </section>
 
 <script src="~/js/sala3.js"></script>

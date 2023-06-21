@@ -59,10 +59,19 @@ public class HomeController : Controller
 
         if (Escape.ResolverSala(4, Convert.ToString(respuesta)))
         {   
-            return View("Sala4");
+            return RedirectToAction("Sala4");
 
         }
             return RedirectToAction("Sala4Des");
 
+    }
+
+    public IActionResult Sala4Des(){
+        ViewBag.pista = Escape.InicializarSala(5);
+        return View();
+    }
+
+        public IActionResult Sala5(){
+        return View();
     }
 }

@@ -9,7 +9,7 @@ const pista = document.getElementsByClassName("pista")
     console.log(pista);
 
 const mostrarPista = (index) => {
-    pista[index].classList.toggle("visible");
+    pista[index].classList.toggle("visiblePista");
     console.log("llego", pista);
 }
 
