@@ -74,4 +74,12 @@ public class HomeController : Controller
         public IActionResult Sala5(){
         return View();
     }
+        public IActionResult Historia(){
+        return View();
+        }
+
+        public IActionResult Creditos(){
+        return View();
+        }
+    
 }

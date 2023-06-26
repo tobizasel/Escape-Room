@@ -3,15 +3,19 @@
 }
 
 <div class="body">
-<nav>
-    <ul class="menu">
-        <a href=""><li class="menu__item">Historia</li></a>
-        <a href=""><li class="menu__item">Tutorial</li></a>
-        <a href=""><li class="menu__item">Creditos</li></a>
-    </ul>
-</nav>
 
-<section> 
+<section class="inicio"> 
+
+    <a href='@Url.Action("Historia")'><div class="inicio__seccion">
+        <h2 class="inicio__titulo">Historia</h2>
+        <img src="~/img/historia.png" alt="Historia" class="inicio__img">
+    </div></a>
+
     <a href='@Url.Action("Sala1")'><button class="inicio__boton">Empezar juego</button></a>
+
+    <a href='@Url.Action("Creditos")'><div class="inicio__seccion">
+        <h2 class="inicio__titulo">Creditos</h2>
+        <img src="~/img/creditos.webp" alt="alt" class="inicio__img">
+    </div></a>
 </section>
 </div>
